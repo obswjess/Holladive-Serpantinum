@@ -87,5 +87,5 @@ output_path = '/home/jesscakes/.config/fastfetch/config.jsonc'
 post_hook = 'bash /home/jesscakes/.config/fastfetch/fastfetch-icon.sh'
 
 [templates.hyprland]
-input_path = 'template/hyprland-colors.lua'
+input_path = 'templates/hyprland-colors.lua'
 output_path = '~/.config/hypr/colors.lua'
