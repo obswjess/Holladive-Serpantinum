@@ -1,21 +1,21 @@
 hl.config({
   general = {
-    border_size = 0,
-    gaps_in = 4,
-    gaps_out = 6,
+    border_size = 2,
+    gaps_in = 12,
+    gaps_out = 15,
     float_gaps = 6,
     resize_on_border = true,
     extend_border_grab_area = 30,
   },
 
   decoration = {
-    rounding = 12,
-    active_opacity = 1.0,
-    inactive_opacity = 1.0,
+    rounding = 5,
+    active_opacity = 0.75,
+    inactive_opacity = 0.90,
     blur = {
       enabled = true,
-      size = 8,
-      passes = 2,
+      size = 2,
+      passes = 3,
       new_optimizations = true,
     },
     shadow = {
