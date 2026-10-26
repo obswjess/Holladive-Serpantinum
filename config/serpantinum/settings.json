@@ -1,18 +1,13 @@
 {
   "general": {
     "language": "en",
-    "avatarPath": "",
+    "avatarPath": "/home/jesscakes/profile.png",
     "muteSfx": false,
     "weatherInterval": 15,
     "weatherUnit": "metric"
   },
-  "syspanel": {
-    "clipExpandProgress": 0,
-    "clipExpanded": false,
-    "clipState": 1
-  },
   "bar": {
-    "position": "top",
+    "position": "left",
     "width": 100,
     "height": 40,
     "opacity": 100,
@@ -31,14 +26,12 @@
      "center": [
         [
           "timedate",
-          "info",
           "weather"
         ]
       ],      
      "right": [
         "tray",
         [
-          "kb",
           "wifi",
           "bt",
           "vol",
@@ -54,7 +47,7 @@
     "matugen": true
   },
   "idle": {
-    "enabled": true,
+    "enabled": false,
     "actions": {
       "dim": {
         "id": "dim",
@@ -114,9 +107,9 @@
   },
   "dock": {
     "enabled": true,
-    "position": "bottom",
+    "position": "right",
     "onTop": true,
-    "elementSize": 44,
+    "elementSize": 46,
     "floating": false,
     "background": true,
     "exclusive": false,
@@ -144,11 +137,11 @@
     "scrollingElements": 7,
     "maxVisibleElements": 7,
     "maxElements": 7,
-    "hoverScale": 120,
+    "hoverScale": 125,
     "cascadeScale": false,
     "focusRunning": true,
     "showRunningIndicators": true,
-    "showRunningApps": false,
+    "showRunningApps": true,
     "runningScope": "auto"
   }
 }
