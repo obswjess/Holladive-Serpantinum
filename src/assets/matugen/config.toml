@@ -1,14 +1,87 @@
 [config]
-reload_apps = false
+reload_apps = true
 
 [templates.quickshell]
 input_path = "templates/serpantinum_matugen_colors.json.template"
 output_path = "~/.local/state/serpantinum/qs_colors.json"
 
-[templates.kitty]
-input_path = "templates/kitty-colors.conf.template"
-output_path = "~/.config/kitty/colors.conf"
-
 [templates.cava]
 input_path = "templates/cava-colors.ini.template"
 output_path = "~/.config/cava/config"
+
+[templates.gtk3]
+input_path = 'templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+
+[templates.gtk4]
+input_path = 'templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+post_hook = 'bash /home/jesscakes/.local/share/serpantinum/src/assets/matugen/post-hook-scripts/gtk-themes-reload.sh'
+
+[templates.heroic]
+input_path = 'templates/heroic.css'
+output_path = '/home/jesscakes/Documents/heroic themes/matugen.css'
+
+[templates.kitty]
+input_path = 'templates/kitty-colors.conf'
+output_path = '~/.config/kitty/themes/Matugen.conf'
+post_hook = "kitty +kitten themes --reload-in=all Matugen"
+
+[templates.nvim]
+input_path = 'templates/nvim-colors.vim'
+output_path = '~/.config/nvim/colors/matugen.vim'
+post_hook = 'pkill -SIGUSR1 nvim'
+
+[templates.pywalfox]
+input_path = 'templates/pywalfox-colors.json'
+output_path = '~/.cache/wal/colors.json'
+post_hook = 'pywalfox update'
+
+[templates.color-scheme]
+input_path = 'templates/Matugen.colors'
+output_path = '/home/jesscakes/.config/qtengine/Matugen.colors'
+
+[templates.color-schemes]
+input_path = 'templates/Matugen.colors'
+output_path = '/home/jesscakes/.local/share/color-schemes/Matugen.colors'
+
+[templates.starship]
+input_path = 'templates/starship-colors.toml'
+output_path = '~/.config/starship.toml'
+
+[templates.vscode-raw]
+input_path = 'templates/vscode-colors'
+output_path = '~/.cache/matugen/vscode-colors'
+
+[templates.vscode-json]
+input_path = 'templates/vscode-colors.json'
+output_path = '~/.cache/matugen/vscode-colors.json'
+
+[templates.cursor]
+input_path = "templates/cursors.json"
+output_path = "~/.config/colors.json"
+post_hook = 'bash /home/jesscakes/.local/share/serpantinum/src/assets/matugen/post-hook-scripts/cursor_matugen.sh'
+
+[templates.spotify]
+input_path = 'templates/spicetify.ini'
+output_path = '/home/jesscakes/.config/spicetify/Themes/text-Retro/color.ini'
+post_hook = 'pgrep -x spicetify > /dev/null || spicetify apply && flatpak run com.spotify.Client'
+
+[templates.btop]
+input_path = 'templates/btop.theme'
+output_path = '~/.config/btop/themes/matugen.theme'
+post_hook = 'pkill -USR2 btop || true'
+
+[templates.firefox-website-colors]
+input_path = "templates/firefox-colors.css"
+output_path = '/home/jesscakes/.config/mozilla/firefox/lgihrz3g.default-release/chrome/colors.css'
+
+[templates.vesktop]
+input_path = 'templates/system24.css'
+output_path = '~/.config/vesktop/themes/system24.css'
+
+[templates.fastfetch]
+input_path = 'templates/fastfetch.jsonc.template'
+output_path = '/home/jesscakes/.config/fastfetch/config.jsonc'
+post_hook = 'bash /home/jesscakes/.config/fastfetch/fastfetch-icon.sh'
