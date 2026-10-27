@@ -1,9 +1,76 @@
 layout {
-    gaps 4
-    border {
-        off
+    gaps 30
+    center-focused-column "always"
+    always-center-single-column
+    default-column-display "normal"
+	background-color "#1a1111"
+
+ preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
     }
+
+    default-column-width { proportion 0.7; }
+
+    preset-window-heights {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+
     focus-ring {
         off
+        // on
+        width 4
+        active-color "#ffb3b1"
+        inactive-color "#a08c8b"
+        urgent-color   "#ffb4ab"
+    }
+
+    border {
+        // off
+        on
+        width 3
+        active-color   "#ffb3b1"
+        inactive-color "#a08c8b"
+        urgent-color   "#ffb4ab"
+    }
+
+    shadow {
+        off
+        // on
+        softness 30
+        spread 5
+        offset x=0 y=5
+        draw-behind-window true
+        color "#00000070"
+    }
+
+    tab-indicator {
+        off
+        // on
+        gap 5
+        width 4
+        length total-proportion=1.0
+        position "right"
+        gaps-between-tabs 2
+        corner-radius 8
+        active-color   "#ffb3b1"
+        inactive-color "#a08c8b"
+        urgent-color   "#ffb4ab"
+    }
+
+    insert-hint {
+        off
+        // on
+        color "#ffb3b180"
+    }
+}
+
+recent-windows {
+    highlight {
+        active-color "#ffb3b1"
+        urgent-color "#ffb4ab"
     }
 }
