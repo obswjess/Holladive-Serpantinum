@@ -1,58 +1,65 @@
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
-  "logo": {
-    "type": "small",
-    "color": {
-      "1": "{{colors.primary.default.hex}}",
-      "2": "{{colors.tertiary.default.hex}}",
-      "3": "{{colors.secondary.default.hex}}"
-    },
-    "padding": {
-      "top": 1,
-      "left": 2,
-      "right": 3
+    "$schema": "github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source":"/home/jesscakes/.config/fastfetch/current_logo.png",
+        "width":25,
+        "height":13,
+        "padding": {
+        "top": 0,
+        "bottom": 15,
+        "left": 5,
+        "right": 0
     }
-  },
-  "display": {
-    "separator": "  ",
-    "color": {
-      "separator": "{{colors.on_surface.default.hex}}"
-    }
-  },
-  "modules": [
-    "break",
-    {
-      "type": "title",
-      "format": "{1}",
-      "color": {
-        "user": "{{colors.primary.default.hex}}"
-      }
     },
-    "break",
-    {
-      "type": "os",
-      "key": "󱄅 os ",
-      "keyColor": "{{colors.primary.default.hex}}"
+    "display": {
+        "separator": "  ",
+        "brightColor": false,
+        "key": {
+            "type": "both-2"
+        }
     },
-    {
-      "type": "cpu",
-      "key": " cpu",
-      "keyColor": "{{colors.tertiary.default.hex}}"
-    },
-    {
-      "type": "memory",
-      "key": "󰘚 ram",
-      "keyColor": "{{colors.secondary.default.hex}}"
-    },
-    {
-      "type": "shell",
-      "key": " sh ",
-      "keyColor": "{{colors.inverse_primary.default.hex}}"
-    },
-    "break",
-    {
-      "type": "colors",
-      "symbol": "circle"
-    }
-  ]
+    "modules": [
+        {
+            "type": "title",
+            "format": "{user-name-colored}{#light_red}@{host-name-colored} {#}{cwd}"
+        },
+        {
+            "type": "os",
+            "key": "System       "
+        },
+        {
+            "type": "kernel",
+            "key": "Kernel       "
+        },
+        {
+            "type": "shell",
+            "key": "Shell        "
+        },
+        {
+            "type": "uptime",
+            "key": "Uptime       "
+        },
+        {
+            "type": "wm",
+            "key": "Desktop      "
+        },
+        {
+            "type": "memory",
+            "key": "Memory       "
+        },
+        {
+            "type": "disk",
+            "key": "Storage (/home/jesscakes/.config/fastfetch/icons//)  ",
+            "folders": "/home/jesscakes/.config/fastfetch/icons//"
+        },
+         {
+            "type": "media",
+            "key": "Media        "
+        },
+        {
+            "type": "colors",
+            "key": "Colors       ",
+            "symbol": "circle"
+        }
+    ]
 }
