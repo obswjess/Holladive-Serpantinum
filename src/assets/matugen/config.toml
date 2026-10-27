@@ -86,6 +86,6 @@ input_path = 'templates/fastfetch.jsonc.template'
 output_path = '/home/jesscakes/.config/fastfetch/config.jsonc'
 post_hook = 'bash /home/jesscakes/.config/fastfetch/fastfetch-icon.sh'
 
-[templates.hyprland]
-input_path = 'templates/hyprland-colors.lua'
-output_path = '~/.config/hypr/colors.lua'
+[templates.niri-borders]
+input_path = 'templates/niri-colors.kdl'
+output_path = '/home/jesscakes/.config/niri/config/layout.kdl'
