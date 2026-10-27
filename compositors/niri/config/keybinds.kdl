@@ -1,8 +1,8 @@
 binds {
-    Mod+Return { spawn "kitty"; }
-    Mod+F { spawn "firefox"; }
+    Mod+T { spawn "kitty"; }
+    Mod+B { spawn "firefox"; }
     Mod+E { spawn "nautilus"; }
-    Mod+Backspace { toggle-overview; }
+    Mod+G { toggle-overview; }
     Mod+Q { close-window; }
     Mod+Alt+F { maximize-window-to-edges; }
     Mod+Shift+F { toggle-window-floating; }
@@ -18,7 +18,7 @@ binds {
     XF86PowerOff { spawn "serpantinum" "lock"; }
     Mod+L { spawn "serpantinum" "lock"; }
 
-    Mod+Space { spawn "playerctl" "play-pause"; }
+    Mod+Alt+Space { spawn "playerctl" "play-pause"; }
     XF86AudioPause { spawn "playerctl" "play-pause"; }
     XF86AudioPlay { spawn "playerctl" "play-pause"; }
     XF86AudioPrev { spawn "playerctl" "previous"; }
@@ -30,18 +30,17 @@ binds {
 
     Mod+R { spawn "serpantinum" "reload"; }
     Mod+C { spawn "serpantinum" "msg" "toggle" "clipboard"; }
-    Mod+D { spawn "serpantinum" "msg" "toggle" "launcher"; }
+    Mod+Space { spawn "serpantinum" "msg" "toggle" "launcher"; }
     Mod+M { spawn "serpantinum" "msg" "toggle" "music"; }
-    Mod+B { spawn "serpantinum" "msg" "toggle" "system"; }
     Mod+W { spawn "serpantinum" "msg" "toggle" "wallpaper"; }
-    Mod+S { spawn "serpantinum" "msg" "toggle" "calendar"; }
+    Mod+O { spawn "serpantinum" "msg" "toggle" "calendar"; }
     Mod+N { spawn "serpantinum" "msg" "toggle" "network"; }
     Mod+V { spawn "serpantinum" "msg" "toggle" "volume"; }
-    Mod+H { spawn "serpantinum" "msg" "toggle" "settings"; }
+    Mod+S { spawn "serpantinum" "msg" "toggle" "settings"; }
     Mod+A { spawn "serpantinum" "msg" "toggle" "autohide"; }
 
-    Mod+Left { focus-column-left; }
-    Mod+Right { focus-column-right; }
+    Mod+WheelScrollUp { focus-column-left; }
+    Mod+WheelScrollDown { focus-column-right; }
     Mod+Up { focus-window-or-workspace-up; }
     Mod+Down { focus-window-or-workspace-down; }
 
