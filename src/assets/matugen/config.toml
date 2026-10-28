@@ -21,7 +21,7 @@ post_hook = 'bash /home/jesscakes/.local/share/serpantinum/src/assets/matugen/po
 
 [templates.heroic]
 input_path = 'templates/heroic.css'
-output_path = '/home/jesscakes/Documents/heroic themes/matugen.css'
+output_path = '/home/jesscakes/.config/Heroic/Matugen.css'
 
 [templates.kitty]
 input_path = 'templates/kitty-colors.conf'
@@ -75,7 +75,7 @@ post_hook = 'pkill -USR2 btop || true'
 
 [templates.firefox-website-colors]
 input_path = "templates/firefox-colors.css"
-output_path = '/home/jesscakes/.config/mozilla/firefox/lgihrz3g.default-release/chrome/colors.css'
+output_path = '/home/jesscakes/.config/mozilla/firefox/7i0ndjnm.default-release/chrome/colors.css'
 
 [templates.vesktop]
 input_path = 'templates/system24.css'
